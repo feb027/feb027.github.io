@@ -69,25 +69,26 @@ nav a.btn:hover {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f7f7f7;
+  background-image: url("your-image-url.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.welcome-content {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 50px;
   text-align: center;
 }
 
-.welcome-section h1 {
+.welcome-content h1 {
   font-size: 48px;
   font-weight: bold;
   color: #333;
   margin-bottom: 20px;
 }
 
-.welcome-section p {
+.welcome-content p {
   font-size: 24px;
   color: #666;
   margin-bottom: 40px;
-}
-
-.welcome-section img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 40px;
 }
