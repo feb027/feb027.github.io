@@ -272,3 +272,58 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #0077b3;
 }
+
+/* Styles for small devices (mobile phones) */
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 5px 0;
+  }
+
+  .welcome-section {
+    height: auto;
+  }
+
+  .welcome-content {
+    padding: 20px;
+  }
+
+  .headquarter-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headquarter-text {
+    margin-top: 20px;
+  }
+
+  .headquarter-locations {
+    flex-direction: column;
+  }
+
+  .location {
+    margin-bottom: 20px;
+  }
+
+  .message-section {
+    padding: 20px;
+  }
+}
