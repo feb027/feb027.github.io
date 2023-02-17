@@ -69,7 +69,7 @@ nav a.btn:hover {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url("https://img.freepik.com/free-vector/white-gray-geometric-pattern-background-vector_53876-136510.jpg");
+  background-image: url("Assets/Texture.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -94,4 +94,45 @@ nav a.btn:hover {
   font-size: 24px;
   color: #666;
   margin-bottom: 40px;
+}
+
+.headquarter-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.headquarter-text h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+.headquarter-locations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.location h3 {
+  font-size: 24px;
+  color: #333;
 }
