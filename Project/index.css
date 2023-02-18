@@ -328,6 +328,20 @@ button[type="submit"]:hover {
   }
 }
 
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer p {
+  font-size: 14px;
+}
+
 /* Set the background color of the scrollbar */
 ::-webkit-scrollbar {
   background-color: #eeeeee;
