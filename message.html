@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>RevoU - Message Us</title>
     <link rel="stylesheet" href="message.css" />
+    <link rel="stylesheet" href="message-animations.css" />
   </head>
   <body>
     <header>
@@ -22,12 +23,12 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1>Message Us</h1>
+          <h1 class="animate__animated animate__fadeInDown">Message Us</h1>
         </div>
       </section>
       <section class="message-page">
-        <h1>Message Us</h1>
-        <form class="message-form" action="#">
+        <h1 class="animate__animated animate__fadeInUp">Message Us</h1>
+        <form class="message-form animate__animated animate__fadeIn" action="#">
           <label for="name">Nama</label>
           <input
             type="text"
@@ -35,6 +36,7 @@
             name="name"
             placeholder="Your name.."
             required
+            class="animate__animated animate__fadeInUp"
           />
 
           <label for="birthday">Tanggal Lahir</label>
@@ -44,10 +46,16 @@
             name="birthday"
             placeholder="Your birthday.."
             required
+            class="animate__animated animate__fadeInUp"
           />
 
           <label for="gender">Kelamin</label>
-          <select id="gender" name="gender" required>
+          <select
+            id="gender"
+            name="gender"
+            required
+            class="animate__animated animate__fadeInUp"
+          >
             <option value="male">Laki-laki</option>
             <option value="female">Perempuan</option>
           </select>
@@ -58,9 +66,14 @@
             name="message"
             placeholder="Write your message.."
             required
+            class="animate__animated animate__fadeInUp"
           ></textarea>
 
-          <input type="submit" value="Submit" />
+          <input
+            type="submit"
+            value="Submit"
+            class="animate__animated animate__fadeInUp"
+          />
         </form>
       </section>
     </main>
