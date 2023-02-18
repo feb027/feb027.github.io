@@ -185,6 +185,7 @@ nav a.btn:hover {
 }
 
 .message-form input[type="text"],
+.message-form input[type="date"],
 .message-form input[type="email"],
 .message-form select,
 .message-form textarea {
@@ -238,4 +239,42 @@ footer .container {
 footer p {
   font-size: 14px;
   color: #eeeeee;
+}
+
+/* Styles for screens with a width of 768px or less */
+@media screen and (max-width: 768px) {
+  /* Adjust the form label and input styling */
+  .message-form label {
+    font-size: 16px;
+  }
+  .message-form input,
+  .message-form select {
+    font-size: 14px;
+    padding: 8px;
+  }
+  /* Adjust the form submit button */
+  .message-form button {
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+/* Styles for screens with a width of 576px or less */
+@media screen and (max-width: 576px) {
+  /* Adjust the form label and input styling */
+  .message-form label {
+    font-size: 14px;
+  }
+  .message-form input,
+  .message-form select {
+    font-size: 12px;
+    padding: 6px;
+  }
+  /* Adjust the form submit button */
+  .message-form button {
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 }

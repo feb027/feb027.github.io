@@ -28,22 +28,28 @@
       <section class="message-page">
         <h1>Message Us</h1>
         <form class="message-form" action="#">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name.." />
-
-          <label for="birthday">Birthday</label>
+          <label for="name">Nama</label>
           <input
             type="text"
+            id="name"
+            name="name"
+            placeholder="Your name.."
+            required
+          />
+
+          <label for="birthday">Tanggal Lahir</label>
+          <input
+            type="date"
             id="birthday"
             name="birthday"
             placeholder="Your birthday.."
+            required
           />
 
-          <label for="gender">Gender</label>
-          <select id="gender" name="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
+          <label for="gender">Kelamin</label>
+          <select id="gender" name="gender" required>
+            <option value="male">Laki-laki</option>
+            <option value="female">Perempuan</option>
           </select>
 
           <label for="message">Message</label>
@@ -51,6 +57,7 @@
             id="message"
             name="message"
             placeholder="Write your message.."
+            required
           ></textarea>
 
           <input type="submit" value="Submit" />
