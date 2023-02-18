@@ -1,9 +1,21 @@
+/* Set global styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #222831;
+  color: #eeeeee;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #fff;
+  background-color: #393e46;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -328,9 +340,12 @@ button[type="submit"]:hover {
   }
 }
 
+/* Style the footer */
 footer {
   padding: 20px 0;
   text-align: center;
+  width: 100%;
+  bottom: 0;
 }
 
 footer .container {
@@ -340,6 +355,7 @@ footer .container {
 
 footer p {
   font-size: 14px;
+  color: #333;
 }
 
 /* Set the background color of the scrollbar */
