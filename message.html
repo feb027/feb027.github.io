@@ -61,7 +61,7 @@
 
           <label for="message">Message</label>
           <textarea
-            id="message"
+            id="message-text"
             name="message"
             placeholder="Write your message.."
             required
@@ -69,12 +69,45 @@
           ></textarea>
 
           <input
+            id="submit"
             type="submit"
             value="Submit"
-            class="animate__animated animate__fadeInUp"
+            class="animate__animated animate__fadeInUp submit"
           />
         </form>
       </section>
+      <script>
+        // Form
+        const form = document.querySelector(".message-form");
+        const submitBtn = document.querySelector(".submit");
+
+        submitBtn.addEventListener("click", (e) => {
+          e.preventDefault(); // prevent default form submission behavior
+          handleSubmit();
+        });
+
+        function handleSubmit() {
+          const nameField = document.querySelector("#name");
+          const birthdayField = document.querySelector("#birthday");
+          const genderField = document.querySelector("#gender");
+          const messageField = document.querySelector("#message-text");
+
+          if (
+            nameField.value === "" ||
+            birthdayField.value === "" ||
+            genderField.value === "" ||
+            messageField.value === ""
+          ) {
+            alert("Tolong untuk di isi dengan lengkap!."); // display an error message if any fields are empty
+          } else {
+            // Display a success message and the form values if all fields are filled out
+            alert(
+              `Terima kasih sudah mengisi, ${nameField.value}! Ini adalah detail yang telah kamu isi:\nTanggal Lahir: ${birthdayField.value}\nKelamin: ${genderField.value}\nPesan: ${messageField.value}`
+            );
+            form.reset(); // reset the form
+          }
+        }
+      </script>
     </main>
     <footer>
       <div class="container">
